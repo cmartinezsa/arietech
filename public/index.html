@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Arie Tech — Estudio textil de playeras personalizadas para quienes combinan tecnología y estilo. Querétaro, México." />
+  <title>Arie Tech — Playeras personalizadas</title>
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- CSS modular -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+<!-- =================== HEADER =================== -->
+<header class="site">
+  <div class="nav">
+    <a href="#" class="brand" aria-label="Arie Tech inicio">
+      <div class="logo">
+        <div class="logo-arie">ARIE<span class="dot"></span></div>
+        <div class="logo-tech">TECH</div>
+      </div>
+    </a>
+    <nav class="nav-links">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#coleccion">Colección</a>
+      <a href="#personalizar">Personalizar</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <button class="cart-btn" id="cartBtn" type="button">
+      <span>Carrito</span>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </div>
+</header>
+
+<!-- =================== HERO =================== -->
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <div class="hero-tag">Estudio textil · Querétaro</div>
+    <h1>Diseña tu <span class="accent">playera</span> con tu <span class="underlined">propio sello</span>.</h1>
+    <p>Sube tu imagen, escribe tu texto o elige un diseño de nuestra galería. Arrastra para acomodarlo donde quieras, en el frente, atrás o ambos.</p>
+    <div class="hero-cta">
+      <a href="#personalizar" class="btn btn-primary">Empezar a personalizar</a>
+      <a href="#catalogo" class="btn btn-ghost">Ver catálogo</a>
+    </div>
+  </div>
+  <div class="hero-visual" id="heroVisual">
+    <svg id="heroShirt" viewBox="0 0 320 410" xmlns="http://www.w3.org/2000/svg"></svg>
+  </div>
+</section>
+
+<!-- =================== 01 CATÁLOGO =================== -->
+<section class="section" id="catalogo">
+  <div class="section-head">
+    <div>
+      <div class="section-eyebrow">01 — Catálogo</div>
+      <h2 class="section-title">Modelos y colores disponibles.</h2>
+    </div>
+    <p class="section-desc">Cada modelo se carga desde nuestra base de datos. Si no aparece, está temporalmente fuera de stock.</p>
+  </div>
+  <div class="catalog" id="catalogGrid">
+    <!-- Renderizado por js/modules/catalog.js -->
+    <div class="loading">Cargando catálogo...</div>
+  </div>
+</section>
+
+<!-- =================== 02 COLECCIÓN =================== -->
+<section class="section" id="coleccion">
+  <div class="section-head">
+    <div>
+      <div class="section-eyebrow">02 — Colección</div>
+      <h2 class="section-title">Diseños listos para llevar.</h2>
+    </div>
+  </div>
+  <div class="collection-grid" id="collectionGrid">
+    <!-- Renderizado por js/modules/collection.js -->
+    <div class="loading">Cargando colección...</div>
+  </div>
+</section>
+
+<!-- =================== 03 PERSONALIZADOR =================== -->
+<section class="customizer" id="personalizar">
+  <div class="section-head">
+    <div>
+      <div class="section-eyebrow">03 — Personaliza</div>
+      <h2 class="section-title">Hazla tuya.</h2>
+    </div>
+  </div>
+  <div class="customizer-inner" id="customizerRoot">
+    <!-- Estructura del personalizador renderizada por js/modules/customizer.js -->
+  </div>
+</section>
+
+<!-- =================== 04 ¿QUIÉNES SOMOS? =================== -->
+<section class="section" id="nosotros">
+  <div class="section-head">
+    <div>
+      <div class="section-eyebrow">04 — ¿Quiénes somos?</div>
+      <h2 class="section-title">Donde la tecnología se viste.</h2>
+    </div>
+  </div>
+
+  <div class="about-intro">
+    <div class="about-eyebrow">Arie Tech · Studio</div>
+    <h3 class="about-headline">
+      Una marca para quienes piensan en <em>código</em>,<br />
+      diseñan en <em>píxeles</em><span class="accent-dot">.</span> y se visten con <em>intención</em>.
+    </h3>
+    <p class="about-body">
+      Arie Tech nace para atender la necesidad de un público que busca combinar sus ideas de tecnología
+      con el estilo de vestimenta. Hacemos playeras pensadas para developers, diseñadores, creativos
+      digitales y cualquier persona que quiera llevar puesto algo más que una prenda.
+    </p>
+  </div>
+
+  <div class="mv-grid">
+    <div class="mv-card mision">
+      <div class="mv-icon">M</div>
+      <div class="mv-label">Misión</div>
+      <h3 class="mv-title">Vestir tu manera de pensar.</h3>
+      <p class="mv-text">
+        Producir playeras y prendas personalizables que conecten con la cultura tech: cómodas, resistentes
+        y con la libertad de diseño para expresar exactamente lo que tienes en mente.
+      </p>
+    </div>
+    <div class="mv-card vision">
+      <div class="mv-icon">V</div>
+      <div class="mv-label">Visión</div>
+      <h3 class="mv-title">Que la tecnología tenga su propio armario.</h3>
+      <p class="mv-text">
+        Ser la marca de referencia en México para quienes viven entre líneas de código, prototipos y
+        pantallas. Construir una comunidad que reconozca a Arie Tech como su estudio textil.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- =================== 05 PROCESO =================== -->
+<section class="section" id="proceso">
+  <div class="section-head">
+    <div>
+      <div class="section-eyebrow">05 — Proceso</div>
+      <h2 class="section-title">De tu idea a tu armario.</h2>
+    </div>
+  </div>
+  <div class="process-grid">
+    <div class="process-card"><div class="process-num">PASO 01</div><h3 class="process-title">Diseñas</h3><p>Elige corte, color, texto o imagen.</p></div>
+    <div class="process-card"><div class="process-num">PASO 02</div><h3 class="process-title">Confirmamos</h3><p>Revisamos el archivo final antes de imprimir.</p></div>
+    <div class="process-card"><div class="process-num">PASO 03</div><h3 class="process-title">Imprimimos</h3><p>Serigrafía o DTF según el diseño.</p></div>
+    <div class="process-card"><div class="process-num">PASO 04</div><h3 class="process-title">Te llega</h3><p>3 a 5 días hábiles. Envíos a todo México.</p></div>
+  </div>
+</section>
+
+<!-- =================== 06 FAQ =================== -->
+<section class="section" id="faq">
+  <div class="section-head">
+    <div>
+      <div class="section-eyebrow">06 — Preguntas frecuentes</div>
+      <h2 class="section-title">Lo que la gente nos pregunta.</h2>
+    </div>
+  </div>
+  <div class="faq-list" id="faqList">
+    <!-- Renderizado por js/modules/faq.js -->
+  </div>
+</section>
+
+<!-- =================== FOOTER =================== -->
+<footer>
+  <div class="footer-inner">
+    <div class="logo">
+      <div class="logo-arie">ARIE<span class="dot"></span></div>
+      <div class="logo-tech">TECH</div>
+    </div>
+    <div>© <span id="footerYear"></span> ARIE TECH · Estudio textil · Querétaro, MX</div>
+    <div class="footer-contact">hola@arietech.mx</div>
+  </div>
+</footer>
+
+<!-- =================== UI overlays =================== -->
+<div class="cart-backdrop" id="cartBackdrop"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Carrito">
+  <div class="cart-header">
+    <h3>Tu carrito</h3>
+    <button class="cart-close" id="cartClose" type="button" aria-label="Cerrar carrito">×</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total</span>
+      <div class="cart-total-value">$<span id="cartTotal">0</span></div>
+    </div>
+    <button class="checkout-btn" id="checkoutBtn" type="button" disabled>Continuar al pago</button>
+  </div>
+</aside>
+
+<div class="size-picker-backdrop" id="sizePickerBackdrop">
+  <!-- Renderizado por js/modules/collection.js -->
+</div>
+
+<button class="admin-trigger" id="adminTrigger" type="button" title="Administración" aria-label="Abrir panel admin">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+</button>
+
+<div class="admin-backdrop" id="adminBackdrop">
+  <!-- Renderizado por js/modules/admin.js -->
+</div>
+
+<div class="toast" id="toast"></div>
+
+<!-- =================== JS MÓDULOS =================== -->
+<script type="module" src="js/main.js"></script>
+
+</body>
+</html>

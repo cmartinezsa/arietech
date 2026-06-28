@@ -1,0 +1,15 @@
+{
+  "name": "arie-tech-migration",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "extract": "node extract_from_monolith.js",
+    "upload": "node upload_images.js",
+    "migrate": "npm run extract && npm run upload"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "dotenv": "^16.4.5"
+  }
+}
